@@ -1,2 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.myhub.traffic.dark.horse.configuration.TrafficDarkHorseAutoConfiguration
+
+org.springframework.context.ApplicationListener=\
+com.myhub.traffic.dark.horse.starter.RequestEventConsumerStarter
