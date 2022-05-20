@@ -1,7 +1,7 @@
 package com.myhub.traffic.dark.horse.core;
 
 import com.github.benmanes.caffeine.cache.Cache;
-import com.google.common.base.Function;
+import java.util.function.Function;
 
 public class ResourceSlidingWindowCache {
     private static final Cache<String, Object> CACHE = CaffeineBuilder.buildAllKeyCache();

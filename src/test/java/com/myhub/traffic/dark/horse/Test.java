@@ -30,6 +30,11 @@ public class Test {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
+                Map<String, Integer> statistics =
+                        RequestStatistics.statistics();
+
+                System.out.println("thread100: " + statistics);
                 request.newRequest(String.valueOf(100));
             }
         });
@@ -41,6 +46,11 @@ public class Test {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
+                Map<String, Integer> statistics =
+                        RequestStatistics.statistics();
+
+                System.out.println("thread200: " + statistics);
                 request.newRequest(String.valueOf(200));
             }
         });
@@ -52,6 +62,11 @@ public class Test {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
+                Map<String, Integer> statistics =
+                        RequestStatistics.statistics();
+
+                System.out.println("thread300: " + statistics);
                 request.newRequest(String.valueOf(300));
             }
         });
